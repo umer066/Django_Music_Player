@@ -1,0 +1,29 @@
+<html>
+<head>
+       
+    <title> music-player </title>
+</head>
+
+<body>
+    <h1> Welcome to Music Platform </h1>
+    <div class="music-player"> </div>
+    {% for item in page_obj %}
+    <div class="cover">
+        <img src="{{item.image.url}}" />
+    </div>            
+
+    <div class="titre">
+        <h3>
+            {{item.singer}}
+        </h3>
+        <h1>
+            {{item.title}}
+        </h1>
+
+    </div>
+
+    <center><a href="{if page_obj.has previous%}?"></center>
+
+</body>
+
+</html>
