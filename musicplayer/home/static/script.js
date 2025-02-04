@@ -2,17 +2,21 @@ var audio = {
     init: function () {
         var $that = this;
         document.addEventListener('DOMContentLoaded', function() {
-            if (typeof $that !== 'undefined' && $that.components && typeof $that.components.media === 'function'){
+            if ($that.components && typeof $that.components.media === 'function'){
                 $that.components.media();
             }
         });
     },
+    
     components: {
+
         media: function (target) {
-            var media = $('audio.fc-media', (target !== undefined) ? target : 'body');
+
+            var media = $('audio.fc-media', target || 'body');
+
             if (media.length) {
                 media.mediaelementplayer({
-                    audioHeight: 40,
+                    audioHeight: 50,
                     features: ['playpause', 'current', 'duration', 'progress', 'volume', 'tracks', 'fullscreen'],
                     alwaysShowControls: true,
                     timeAndDurationSeparator: '<span></span>',
@@ -25,6 +29,7 @@ var audio = {
 
     },
 };
+
 audio.init();
 
 
