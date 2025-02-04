@@ -1,0 +1,40 @@
+# Python
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+
+# Django
+*.log
+*.pot
+*.py[cod]
+instance/
+.venv/
+.env/
+env/
+venv/
+.vscode/
+
+# Static files
+staticfiles/
+
+# Media files
+media/
+
+# Django settings (local settings)
+local_settings.py
+
+# SQLite database
+db.sqlite3
+
+# MySQL/MariaDB
+*.sql
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Mac OS
+.DS_Store
