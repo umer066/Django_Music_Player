@@ -1,7 +1,6 @@
 <html>
 
 <head>
-
     <title>
         music-player
     </title>
@@ -9,13 +8,11 @@
 
 <body>
 
-
-
     <div class="music-player">
 
         {% for item in page_obj %}
         <div class="cover">
-            <img src="{{item.image.url}}" />
+            <img src="{{item.image.url}}"  alt=" " />
         </div>
 
         <div class="titre">
@@ -35,6 +32,7 @@
                     class="fa fa-step-forward fa-2x "></i> </a>
         </center>
 
+        
         <div class="lecteur">
             <audio class=" fc-media " style=" width:100%;" id="fc-media">
                 <source

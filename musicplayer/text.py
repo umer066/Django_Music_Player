@@ -1,8 +1,11 @@
-import syncedlyrics 
-query=input("Enter Song Name")
-lrc = syncedlyrics.search(query)
 import re
 import json
+import syncedlyrics 
+
+
+query=input("Enter Song Name").strip()
+lrc = syncedlyrics.search(query)
+
 
 # Input data
 data = lrc
