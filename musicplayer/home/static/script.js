@@ -7,7 +7,7 @@ var audio = {
             }
         });
     },
-    
+
     components: {
 
         media: function (target) {
