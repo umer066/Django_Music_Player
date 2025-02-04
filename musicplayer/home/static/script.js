@@ -1,8 +1,10 @@
 var audio = {
     init: function () {
         var $that = this;
-        $(function () {
-            $that.components.media();
+        document.addEventListener('DOMContentLoaded', function() {
+            if (typeof $that !== 'undefined' && $that.components && typeof $that.components.media === 'function'){
+                $that.components.media();
+            }
         });
     },
     components: {
